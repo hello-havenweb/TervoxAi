@@ -1,0 +1,1219 @@
+# TERVOX AI — COMPLETE MASTER WEBSITE DEVELOPMENT PROMPT
+
+## PROJECT: DESIGN AND DEVELOP THE OFFICIAL TERVOX AI WEBSITE
+
+You are an expert senior frontend developer, UI/UX designer, creative web designer, 3D graphics developer, animation specialist, and software architect.
+
+Your task is to build a complete, premium, futuristic, responsive, multi-page official website for **TERVOX AI**, an AI assistant application.
+
+This is a real product website, not a simple landing page or generic AI website template.
+
+The website must have a distinctive identity, premium visual quality, beautiful interactions, smooth animations, excellent responsiveness, and clean code.
+
+IMPORTANT: Build this directly inside the existing project. Inspect the existing project before modifying anything. Preserve useful existing functionality.
+
+The website must contain separate pages with working navigation. Do not turn it into a single-page website.
+
+---
+
+# 1. BRAND IDENTITY AND VISUAL DIRECTION
+
+The original TERVOX AI desktop application screenshot is the PRIMARY design reference.
+
+The website must look like an official extension of the actual desktop application.
+
+### Core colour palette
+
+Use:
+
+- Midnight navy: #050B16
+- Deep navy: #081426
+- Secondary background: #0B1D32
+- Electric cyan: #00D9FF
+- Bright blue: #168BFF
+- White: #EAF6FF
+- Muted blue-grey: #91A8BD
+
+You may refine the colours slightly to improve visual consistency and contrast.
+
+### Visual identity
+
+The website must feature:
+
+- Deep midnight navy backgrounds.
+- Electric cyan highlights.
+- Beautiful blue lighting.
+- A signature glowing energy orb.
+- Subtle futuristic grid patterns.
+- Glass-like interface panels.
+- Fine glowing borders.
+- Elegant typography.
+- Atmospheric depth.
+- Premium dark UI.
+- Subtle blue gradients.
+
+Purple may only be used as a small secondary accent when necessary.
+
+Do NOT use a generic purple-and-black AI template.
+
+Do NOT use green as the primary theme.
+
+The original TERVOX AI app screenshot takes priority over the default colour schemes of any external reference component.
+
+### Overall visual personality
+
+The website should feel:
+
+- Intelligent.
+- Futuristic.
+- Premium.
+- Professional.
+- Innovative.
+- Minimal but visually impressive.
+- Technologically advanced.
+
+The result should look like a custom-designed premium software brand.
+
+---
+
+# 2. GLOBAL COMING SOON ANNOUNCEMENT
+
+TERVOX AI is not yet publicly available for download.
+
+Therefore, the website must clearly communicate its upcoming availability.
+
+Display a professional **COMING SOON** announcement throughout the website.
+
+### Announcement banner
+
+Create a beautiful announcement banner near the top of the website.
+
+Suggested text:
+
+"TERVOX AI is coming soon. Stay tuned for launch updates."
+
+Include a subtle cyan animated indicator.
+
+The banner must:
+- Be visually noticeable.
+- Match the navy/cyan brand.
+- Be responsive.
+- Have a professional appearance.
+- Not obstruct navigation.
+- Be consistent across pages.
+
+### Coming Soon visual identity
+
+Use tasteful Coming Soon labels on relevant buttons, cards, and sections.
+
+Do not make the website look unfinished.
+
+The Coming Soon message should communicate anticipation and upcoming availability, while the rest of the website remains complete and professional.
+
+Do not invent a launch date.
+
+Do not create fake countdown timers.
+
+Do not imply that the software is currently available if it is not.
+
+---
+
+# 3. THREEUI COMPONENT INTEGRATION
+
+Two specific ThreeUI components must be integrated using their exact registered source.
+
+These are technical requirements, not just visual inspiration.
+
+## A. GlobeCollection — ENERGY ORB
+
+Component: GlobeCollection
+
+Variant: energy-orb
+
+Canonical source:
+
+https://threeui.com/source-code/energy-orb.json
+
+Configured usage:
+
+import { GlobeCollection } from "@designcodeio/threeui";
+import "@designcodeio/threeui/style.css";
+
+<GlobeCollection
+  variant="energy-orb"
+  speed={1.00}
+  scale={1.00}
+  smokeScale={1.00}
+  smokeStrength={1.00}
+  smokeSpeed={1.00}
+  hue={0}
+  saturation={1.00}
+  glow={1.00}
+  starDensity={1.00}
+  starSpeed={1.00}
+  starSize={1.00}
+  brightness={1.00}
+  opacity={1.00}
+/>
+
+### Purpose
+
+This energy orb is the main signature visual of TERVOX AI.
+
+Use it prominently in the homepage hero.
+
+It should represent the intelligence and technological identity of TERVOX AI.
+
+Preserve:
+- Original shader implementation.
+- Atmospheric effects.
+- Smoke.
+- Glow.
+- Stars.
+- Depth.
+- Motion.
+- Responsive behaviour.
+- Configured properties.
+
+Integrate it elegantly with the homepage typography and layout.
+
+## B. SylvaHero — LIVING GREEN
+
+Component: SylvaHero
+
+Variant: living-green
+
+Canonical HTML:
+
+https://threeui.com/landing-pages/inner-green-3d.html
+
+Complete registered source bundle:
+
+https://threeui.com/source-code/sylva-hero.json
+
+Configured usage:
+
+import { SylvaHero } from "@designcodeio/threeui";
+import "@designcodeio/threeui/style.css";
+
+<SylvaHero
+  variant="living-green"
+  headingFont="lexend"
+  bodyFont="lexend"
+  headingWeight="300"
+  bodyWeight="300"
+  primaryColor="#ffffff"
+  headingSize={63}
+  bodySize={16.5}
+  headingLetterSpacing={-0.006}
+/>
+
+### Reference features
+
+- 3D moss-root environment.
+- Pale flowers.
+- Ferns.
+- Drifting pollen.
+- Landing butterfly.
+- Native liquid-metal controls.
+- Full hero layout.
+- Three.js rendering.
+- Smooth environmental animations.
+
+### IMPORTANT: COLOUR ADAPTATION
+
+The original SylvaHero green colour palette must NOT become the primary website theme.
+
+Use its:
+- 3D environmental composition.
+- Organic movement.
+- Flowers.
+- Ferns.
+- Butterfly.
+- Particle effects.
+- Liquid-metal controls.
+- Interaction design.
+- Cinematic presentation.
+
+Adapt its colours to TERVOX AI branding:
+
+- Replace green illumination with cyan and electric blue.
+- Use dark navy shadows.
+- Use subtle blue lighting on environmental elements.
+- Adapt pollen into soft glowing cyan particles.
+- Give the butterfly a delicate blue/cyan lighting treatment.
+- Keep the environment sophisticated and visually balanced.
+
+Do not destroy the original component structure or functionality merely to change the colour treatment.
+
+### Exact source requirements for BOTH components
+
+1. Retrieve and inspect the complete registered source before implementation.
+2. Use the exact registered source, dependencies, shaders, assets, and configured component usage.
+3. Preserve original structure, styling, motion, interactions, and responsive behaviour.
+4. Do not recreate the components using CSS approximations.
+5. Do not use screenshots or documentation pages as substitutes for actual source.
+6. Verify required source files and asset hashes where available.
+7. If a source bundle or required asset cannot be retrieved, stop and report the exact missing item.
+8. Never silently replace a missing component with an imitation.
+9. Integrate components into the existing project.
+
+---
+
+# 4. WEBSITE ARCHITECTURE — ELEVEN SEPARATE PAGES
+
+Create the following independent pages:
+
+1. Home
+2. Features
+3. App / How It Works
+4. Download
+5. About
+6. Pricing
+7. Help Center / Documentation
+8. Contact
+9. Login
+10. Sign Up
+11. Custom 404
+
+Recommended routes:
+
+/
+ /features
+ /app
+ /download
+ /about
+ /pricing
+ /docs
+ /contact
+ /login
+ /signup
+
+Use a consistent navigation system, footer, typography, background, colour palette, and design language across every page.
+
+Every page must be independently accessible through its own route.
+
+---
+
+# 5. PAGE 1 — HOMEPAGE
+
+Create an impressive cinematic homepage.
+
+This page must immediately communicate the TERVOX AI brand.
+
+## Hero section
+
+Use a full-screen cinematic hero.
+
+Main headline:
+
+"Meet TERVOX AI."
+
+Supporting headline:
+
+"One Intelligent Space. Endless Possibilities."
+
+Description:
+
+"Your AI companion for exploring ideas, solving problems, creating, and getting more done."
+
+Primary button:
+
+"Explore TERVOX AI"
+
+Secondary button:
+
+"Discover Features"
+
+Include:
+- Large animated energy orb.
+- Dark navy atmospheric environment.
+- Blue lighting.
+- Subtle futuristic grid.
+- Floating particles.
+- Elegant text animations.
+- Soft ambient glow.
+- Mouse-responsive movement.
+- Cinematic composition.
+
+### Coming Soon announcement
+
+Place a small but noticeable badge:
+
+"COMING SOON"
+
+Supporting text:
+
+"Something intelligent is on the way."
+
+The homepage must also include the global Coming Soon announcement banner.
+
+### Scroll-driven storytelling
+
+As visitors scroll:
+
+- The energy orb changes size and position.
+- Lighting evolves smoothly.
+- Particles move naturally.
+- Text elements enter and leave gracefully.
+- Feature cards appear with elegant transitions.
+- The application preview emerges from the visual environment.
+- Sections transition into one another naturally.
+
+Use scroll-based animations without interfering with normal scrolling.
+
+### Additional homepage sections
+
+1. Hero.
+2. Coming Soon announcement.
+3. Introduction to TERVOX AI.
+4. Interactive application preview.
+5. Main feature highlights.
+6. How TERVOX AI works.
+7. Energy orb visual showcase.
+8. Product philosophy.
+9. Coming Soon / launch announcement.
+10. Final CTA.
+11. Footer.
+
+Do not create fake statistics, user counts, testimonials, awards, or unsupported claims.
+
+---
+
+# 6. PAGE 2 — FEATURES
+
+Create a dedicated features page.
+
+Potential features to showcase, subject to actual application verification:
+
+- AI Conversations.
+- Coding Assistance.
+- Image AI.
+- Personal Memory.
+- Workspace.
+- Web Search.
+- Voice Interaction.
+- Multi-language Support.
+- Settings and Preferences.
+
+Each feature must have:
+
+- Its own visual card or section.
+- A concise description.
+- Relevant interface preview.
+- Subtle hover interactions.
+- Consistent icons.
+- Professional layout.
+
+Only claim that a feature is available if it actually exists.
+
+If a feature is planned or incomplete, label it Coming Soon.
+
+Add tasteful animations and smooth transitions.
+
+---
+
+# 7. PAGE 3 — APP / HOW IT WORKS
+
+Show visitors how TERVOX AI works.
+
+Use the real desktop application screenshot as the UI reference.
+
+Create sections explaining:
+
+1. Opening TERVOX AI.
+2. Starting a conversation.
+3. Using AI assistance.
+4. Exploring available tools.
+5. Managing conversations.
+6. Personal Memory and preferences, if supported.
+
+Include beautiful application mockups based on the real interface.
+
+Do not invent a completely different interface.
+
+Use smooth interface transitions and subtle interactive demonstrations.
+
+---
+
+# 8. PAGE 4 — DOWNLOAD
+
+This page is especially important.
+
+The software is not yet publicly available.
+
+The download page must prominently display:
+
+<COMING SOON>
+
+### Main heading
+
+"TERVOX AI is Coming Soon."
+
+### Supporting text
+
+"We're preparing something intelligent. TERVOX AI will be available to download soon. Stay tuned for the official launch."
+
+### Main visual
+
+Include:
+- Large glowing energy orb.
+- Premium product presentation.
+- Dark navy background.
+- Cyan lighting.
+- Elegant Coming Soon typography.
+- Subtle particles.
+- Beautiful animated interface preview.
+
+### Download button
+
+Display a disabled or non-downloadable button labelled:
+
+"Coming Soon"
+
+Do not provide a fake download link.
+
+Do not make the button appear functional if no installer is available.
+
+### Additional download information
+
+Create visually organized areas ready for:
+
+- Platform availability.
+- Version number.
+- File size.
+- System requirements.
+- Installation guide.
+- Release notes.
+- Updates.
+
+Only populate these with verified information.
+
+Until the official installer is available, display:
+
+"Download details will be announced soon."
+
+Do not invent a launch date or file size.
+
+---
+
+# 9. PAGE 5 — ABOUT
+
+Create a professional About page.
+
+Suggested heading:
+
+"Built to Make Intelligence More Accessible."
+
+Include:
+
+- TERVOX AI introduction.
+- Brand story.
+- Product philosophy.
+- Vision.
+- Design principles.
+- Signature energy orb.
+- Coming Soon announcement.
+- Final CTA.
+
+Keep the writing authentic, concise, and professional.
+
+Do not invent company history, team members, or achievements.
+
+---
+
+# 10. PAGE 6 — PRICING
+
+Create a separate Pricing page.
+
+If actual pricing has not been finalized:
+
+Display:
+
+"Pricing Plans Coming Soon."
+
+Supporting text:
+
+"We're working on the right experience. Pricing and plan details will be announced closer to launch."
+
+Create a visually polished placeholder layout ready for future pricing tiers.
+
+Do not invent:
+- Subscription prices.
+- Discounts.
+- Free trial durations.
+- Premium benefits.
+- Fake countdowns.
+
+---
+
+# 11. PAGE 7 — HELP CENTER / DOCUMENTATION
+
+Create a useful Help Center.
+
+Include:
+
+- Getting Started.
+- Installation Guide.
+- Application Basics.
+- Features Guide.
+- Troubleshooting.
+- Frequently Asked Questions.
+- Contact Support.
+
+Add:
+- Working documentation search.
+- Collapsible FAQ sections.
+- Clean documentation navigation.
+- Responsive reading layout.
+
+Do not invent technical instructions for features that have not been verified.
+
+---
+
+# 12. PAGE 8 — CONTACT
+
+Build a premium contact page.
+
+Include:
+
+- Contact introduction.
+- Name field.
+- Email field.
+- Subject field.
+- Message field.
+- Submit button.
+- Form validation.
+- Success state.
+- Error state.
+
+Use the actual support email only when provided.
+
+Do not show a fake successful submission if no backend or form service is connected.
+
+The form must be responsive, accessible, and easy to use.
+
+---
+
+# 13. PAGE 9 — LOGIN
+
+Create a separate premium Login page.
+
+This must feel like an integral part of TERVOX AI, not a generic authentication template.
+
+### Visual design
+
+Use:
+- Midnight navy background.
+- Electric blue highlights.
+- Cyan glow.
+- Subtle grid pattern.
+- Beautiful glowing energy orb.
+- Glass-like authentication panel.
+- Elegant typography.
+- Subtle animated background particles.
+
+Keep the form clean and easy to use.
+
+### Login content
+
+Heading:
+
+"Welcome Back."
+
+Supporting text:
+
+"Sign in to continue your TERVOX AI experience."
+
+### Login methods
+
+Provide:
+
+1. Continue with Google.
+2. Login with Email.
+
+### Email login form
+
+Fields:
+- Email address.
+- Password.
+
+Additional elements:
+- Show/hide password.
+- Remember me, if supported.
+- Forgot Password link.
+- Login button.
+- Loading state.
+- Validation messages.
+- Authentication error messages.
+
+Below the form:
+
+"Don't have an account? Create Account"
+
+Link it to the Sign Up page.
+
+### Google login
+
+Implement actual Google authentication using the selected authentication provider.
+
+Do not create a decorative Google button that does nothing.
+
+If Google OAuth credentials are not configured, clearly identify the configuration requirement.
+
+---
+
+# 14. PAGE 10 — SIGN UP
+
+Create a separate, visually impressive Sign Up page.
+
+This page should have the same visual quality as the Login page.
+
+### Main heading
+
+"Create Your TERVOX Account."
+
+Supporting text:
+
+"Get ready to experience a new way of working with AI."
+
+### Sign Up methods
+
+Provide two clear options:
+
+1. Sign up with Google.
+2. Sign up with Email.
+
+### Google sign-up
+
+Implement actual Google OAuth registration.
+
+The Google button must:
+- Use an appropriate Google icon.
+- Have a professional hover state.
+- Start the actual authentication process.
+- Handle loading and error states.
+
+Do not create a fake working button.
+
+### Email sign-up form
+
+Fields:
+
+- Full Name.
+- Email Address.
+- Password.
+- Confirm Password.
+
+Include:
+- Show/hide password.
+- Password confirmation validation.
+- Email format validation.
+- Password strength feedback.
+- Required-field validation.
+- Terms and Privacy acknowledgement where appropriate.
+- Create Account button.
+- Loading state.
+- Success and error messages.
+
+Below the form:
+
+"Already have an account? Login"
+
+Link it to the Login page.
+
+### Authentication experience
+
+Create a polished account creation experience.
+
+After successful registration:
+- Display an appropriate success state.
+- Handle email verification if required by the authentication provider.
+- Redirect the user to the appropriate next screen.
+- Do not falsely claim an account has been created if authentication fails.
+
+### Additional authentication features
+
+Prepare support for:
+
+- Forgot Password.
+- Password Reset.
+- Email Verification.
+- Logout.
+- Session Management.
+- Protected routes where necessary.
+
+### Authentication security
+
+Use a real authentication provider, such as Firebase Authentication or Supabase Auth.
+
+Before implementation, inspect the existing project and choose the provider that best fits its existing architecture.
+
+Do not store passwords in plain text.
+
+Do not hardcode secret keys or private credentials in frontend code.
+
+Use secure environment variables and appropriate authentication configuration.
+
+Do not pretend that authentication works before its provider and OAuth configuration have been completed.
+
+The Login and Sign Up pages must be fully responsive and accessible.
+
+---
+
+# 15. PAGE 11 — CUSTOM 404
+
+Create a visually distinctive 404 page.
+
+Main heading:
+
+"Lost in Another Dimension?"
+
+Supporting text:
+
+"The page you're looking for doesn't seem to exist."
+
+Include:
+- Small animated energy orb.
+- Subtle particles.
+- Return Home button.
+- Explore Features link.
+- Consistent navy/cyan design.
+
+---
+
+# 16. NAVIGATION SYSTEM
+
+Create a premium responsive navbar.
+
+Include:
+
+- TERVOX AI wordmark.
+- Home.
+- Features.
+- App.
+- Download.
+- About.
+- Pricing.
+- Documentation.
+- Contact.
+- Login.
+- Sign Up.
+
+The navbar must remain organized and must not feel overcrowded.
+
+Use a compact menu or suitable dropdown where necessary.
+
+### Navbar behaviour
+
+- Transparent or subtly translucent at the top.
+- Smooth transition into a dark glass-like navbar on scroll.
+- Clear active-page indicator.
+- Elegant hover effects.
+- Responsive mobile menu.
+- Accessible keyboard navigation.
+- Proper spacing.
+
+Make Sign Up visually noticeable as the primary navigation action without overpowering the rest of the navbar.
+
+---
+
+# 17. FOOTER
+
+Create a consistent footer across all pages.
+
+Include:
+
+- TERVOX AI logo/wordmark.
+- Short brand description.
+- Product navigation.
+- Company links.
+- Documentation.
+- Contact.
+- Login.
+- Sign Up.
+- Privacy Policy.
+- Terms of Service.
+- Copyright information.
+
+Use social media links only when actual URLs are provided.
+
+Add a subtle blue glow and elegant divider.
+
+Include a small Coming Soon message where appropriate.
+
+---
+
+# 18. ANIMATIONS AND INTERACTIONS
+
+The website should feel alive and premium.
+
+### Required animations
+
+- Smooth page transitions.
+- Scroll-triggered reveals.
+- Subtle parallax.
+- Orb movement.
+- Ambient particles.
+- Cursor-responsive lighting.
+- Elegant hover states.
+- Button glow effects.
+- Card depth effects.
+- Animated navigation indicators.
+- Smooth dropdowns.
+- Subtle background grid movement.
+- Loading transitions.
+
+### Additional creative effects
+
+Create a consistent AI atmosphere throughout the website.
+
+Possible details:
+
+- A faint light field that responds to mouse movement.
+- Subtle cyan ripple effects on important buttons.
+- Tiny particles surrounding the energy orb.
+- Fine animated lines connecting interface elements.
+- Soft ambient lighting.
+- Smooth transitions between the orb and application previews.
+- Subtle glowing borders on authentication panels.
+
+Keep all effects tasteful.
+
+Do not use:
+- Excessive neon.
+- Constant flashing.
+- Aggressive animations.
+- Unnecessary spinning.
+- Excessive blur.
+- Distracting background effects.
+
+Respect the user's reduced-motion preference.
+
+---
+
+# 19. TYPOGRAPHY AND DESIGN SYSTEM
+
+Use a modern premium typography system.
+
+Lexend can be used where appropriate.
+
+Maintain consistent:
+
+- Heading sizes.
+- Font weights.
+- Line heights.
+- Letter spacing.
+- Section spacing.
+- Border radii.
+- Button dimensions.
+- Card styling.
+
+Make headings confident and readable.
+
+Make body text comfortable to read.
+
+Maintain strong colour contrast.
+
+---
+
+# 20. RESPONSIVE DESIGN
+
+The entire website must work beautifully on:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Do not simply shrink desktop layouts.
+
+Adapt each page specifically for smaller screens.
+
+Requirements:
+
+- Responsive navbar.
+- Correct text wrapping.
+- Proper spacing.
+- Optimized orb dimensions.
+- Touch-friendly controls.
+- No horizontal overflow.
+- No clipped elements.
+- No broken cards.
+- Mobile-friendly authentication forms.
+- Properly responsive documentation.
+
+3D scenes must scale appropriately on mobile devices.
+
+---
+
+# 21. PERFORMANCE
+
+Performance is essential.
+
+The website must remain smooth even with 3D scenes and animations.
+
+Requirements:
+
+- Optimize Three.js rendering.
+- Avoid unnecessary render loops.
+- Reduce particle density on weaker devices.
+- Lazy-load appropriate assets.
+- Optimize images.
+- Avoid unnecessary dependencies.
+- Prevent memory leaks.
+- Clean up event listeners and animation loops.
+- Prevent layout shifts.
+- Keep scrolling smooth.
+- Avoid excessive DOM elements.
+- Avoid unnecessary re-renders.
+
+Provide sensible fallbacks if WebGL is unavailable.
+
+Do not allow visual effects to make the website unusable on mobile or lower-powered devices.
+
+---
+
+# 22. SEO AND ACCESSIBILITY
+
+Every page must have:
+
+- Unique page title.
+- Unique meta description.
+- Proper heading hierarchy.
+- Open Graph metadata.
+- Appropriate favicon.
+- Semantic HTML.
+- Accessible buttons and links.
+- Keyboard-friendly navigation.
+- Meaningful image alt text.
+
+Also configure:
+
+- sitemap.xml
+- robots.txt
+- Canonical URLs.
+- Brand favicon.
+- Social sharing preview.
+
+Use appropriate SEO descriptions without keyword stuffing.
+
+---
+
+# 23. CODE QUALITY AND PROJECT STRUCTURE
+
+Work directly inside the existing project.
+
+Before changing anything:
+
+1. Inspect the entire project.
+2. Identify its framework.
+3. Inspect dependencies.
+4. Inspect existing routes.
+5. Inspect current components.
+6. Identify existing assets.
+7. Preserve useful functionality.
+
+Create reusable components for:
+
+- Navbar.
+- Footer.
+- Buttons.
+- Cards.
+- Authentication panels.
+- Input fields.
+- Page layouts.
+- Background effects.
+- Page transitions.
+- Animation utilities.
+
+Keep each page organized.
+
+Do not place the entire website inside one oversized component.
+
+Use clean, maintainable code.
+
+Every route must work.
+
+Every button must perform its advertised action.
+
+Do not leave decorative elements pretending to be functional.
+
+---
+
+# 24. IMPORTANT RULES
+
+1. The original TERVOX AI application screenshot is the primary design reference.
+2. Use navy, cyan, and electric blue as the core palette.
+3. Do not turn the website green.
+4. Do not use a generic purple AI template.
+5. Preserve both ThreeUI component implementations.
+6. Use GlobeCollection as the signature energy orb.
+7. Adapt SylvaHero's environment to TERVOX AI colours.
+8. Create eleven separate pages.
+9. Include dedicated Login and Sign Up pages.
+10. Include Google and Email authentication.
+11. Do not fake authentication functionality.
+12. Display Coming Soon across the website.
+13. The Download page must clearly state Coming Soon.
+14. Do not create fake download links.
+15. Do not invent product features.
+16. Do not invent pricing.
+17. Do not invent testimonials or statistics.
+18. Do not invent a launch date.
+19. Do not sacrifice performance for animations.
+20. Do not remove existing functionality without a clear reason.
+21. Do not create a single-page website.
+22. Keep all pages visually consistent.
+23. Test the actual browser output.
+
+---
+
+# 25. IMPLEMENTATION WORKFLOW
+
+Follow this exact sequence.
+
+### PHASE 1 — PROJECT INSPECTION
+
+Inspect the entire existing project.
+
+Understand its framework, dependencies, assets, routing, and existing functionality.
+
+Do not start by blindly replacing files.
+
+### PHASE 2 — THREEUI SOURCE VERIFICATION
+
+Retrieve and inspect both complete ThreeUI source bundles.
+
+Verify their dependencies, assets, and configured usage.
+
+If any required source is inaccessible, stop that component's implementation and report the exact missing files.
+
+Do not approximate the components.
+
+### PHASE 3 — DESIGN FOUNDATION
+
+Establish:
+- Brand colour system.
+- Typography.
+- Navbar.
+- Footer.
+- Backgrounds.
+- Reusable components.
+- Global Coming Soon announcement.
+
+### PHASE 4 — THREE-DIMENSIONAL COMPONENTS
+
+Integrate:
+- GlobeCollection.
+- SylvaHero.
+
+Apply the TERVOX AI colour identity while preserving original functionality.
+
+Verify both components render correctly.
+
+### PHASE 5 — PAGE DEVELOPMENT
+
+Build all eleven separate pages.
+
+### PHASE 6 — AUTHENTICATION
+
+Implement:
+- Login.
+- Sign Up.
+- Email authentication.
+- Google authentication.
+- Forgot Password.
+- Email Verification.
+- Appropriate session handling.
+
+Identify any required external credentials or provider configuration.
+
+### PHASE 7 — ANIMATIONS
+
+Add:
+- Scroll-driven storytelling.
+- Orb animations.
+- Parallax.
+- Cursor-responsive lighting.
+- Page transitions.
+- Interactive hover states.
+- Ambient effects.
+
+### PHASE 8 — RESPONSIVE OPTIMIZATION
+
+Test desktop, laptop, tablet, and mobile.
+
+### PHASE 9 — FUNCTIONALITY
+
+Verify:
+- All navigation links.
+- All page routes.
+- Login.
+- Sign Up.
+- Google authentication.
+- Email authentication.
+- Form validation.
+- Coming Soon buttons.
+- Download placeholder.
+- Contact form.
+- Documentation search.
+- FAQ interactions.
+
+### PHASE 10 — FINAL TESTING
+
+Check:
+
+- Console errors.
+- Broken links.
+- Missing assets.
+- WebGL errors.
+- Responsive issues.
+- Animation performance.
+- Navigation behaviour.
+- Accessibility.
+- SEO metadata.
+- Authentication errors.
+
+Use an actual browser preview to test the rendered website and its interactions.
+
+Do not claim completion simply because the code compiles.
+
+---
+
+# 26. FINAL CREATIVE DIRECTION
+
+The final TERVOX AI website must feel like a premium digital product universe.
+
+Combine:
+
+- The original TERVOX AI desktop application's visual identity.
+- The cinematic 3D energy orb.
+- The environmental composition and motion of SylvaHero.
+- A professional software-product website.
+- Smooth scroll-driven storytelling.
+- Premium login and registration experiences.
+- Email and Google authentication.
+- Coming Soon announcements.
+- Eleven fully separate pages.
+- Excellent responsiveness.
+- Strong performance.
+- Clean and maintainable code.
+
+### Main brand statement
+
+"TERVOX AI — Intelligence, Beyond the Ordinary."
+
+### Final instruction
+
+Do not produce a generic template.
+
+Do not cut corners.
+
+Do not skip source verification.
+
+Do not replace real functionality with decorative placeholders.
+
+Build a cohesive, original, polished, production-quality website that looks and feels like the official home of TERVOX AI.
+
+Prioritize originality, visual quality, usability, functionality, consistency, and performance.

@@ -1,0 +1,6 @@
+{
+  "name": "TERVOX AI — Official Website",
+  "description": "The official website for TERVOX AI — One Intelligent Space. Endless Possibilities. Intelligence, Beyond the Ordinary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
