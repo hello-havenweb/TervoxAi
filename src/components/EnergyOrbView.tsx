@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GlobeCollection } from '@designcodeio/threeui';
+import { ErrorBoundary } from './ErrorBoundary';
 
 interface EnergyOrbViewProps {
   className?: string;
@@ -18,7 +19,16 @@ interface EnergyOrbViewProps {
   opacity?: number;
 }
 
-export const EnergyOrbView: React.FC<EnergyOrbViewProps> = ({
+const EnergyOrbFallback: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <div className={`relative flex items-center justify-center select-none ${className}`}>
+    <div className="w-56 h-56 rounded-full bg-radial from-[#00D9FF] via-[#168BFF]/40 to-transparent blur-2xl animate-pulse" />
+    <div className="absolute w-40 h-40 rounded-full border border-[#00D9FF]/40 bg-[#081426]/80 backdrop-blur-md shadow-[0_0_50px_#00D9FF]" />
+    <div className="absolute w-20 h-20 rounded-full bg-[#00D9FF]/30 blur-md" />
+    <div className="absolute text-xs tracking-widest text-[#00D9FF] uppercase font-mono">TERVOX Core</div>
+  </div>
+);
+
+const InnerEnergyOrb: React.FC<EnergyOrbViewProps> = ({
   className = '',
   speed = 1.0,
   scale = 1.0,
@@ -49,14 +59,7 @@ export const EnergyOrbView: React.FC<EnergyOrbViewProps> = ({
   }, []);
 
   if (!hasWebGL) {
-    // Beautiful graceful fallback if WebGL is disabled
-    return (
-      <div className={`relative flex items-center justify-center ${className}`}>
-        <div className="w-64 h-64 rounded-full bg-radial from-[#00D9FF] via-[#168BFF]/40 to-transparent blur-xl animate-pulse" />
-        <div className="absolute w-44 h-44 rounded-full border border-[#00D9FF]/40 bg-[#081426]/80 backdrop-blur-md shadow-[0_0_50px_#00D9FF]" />
-        <div className="absolute text-xs tracking-widest text-[#00D9FF] uppercase font-mono">TERVOX Core</div>
-      </div>
-    );
+    return <EnergyOrbFallback className={className} />;
   }
 
   return (
@@ -78,5 +81,13 @@ export const EnergyOrbView: React.FC<EnergyOrbViewProps> = ({
         opacity={opacity}
       />
     </div>
+  );
+};
+
+export const EnergyOrbView: React.FC<EnergyOrbViewProps> = (props) => {
+  return (
+    <ErrorBoundary silentFallback={<EnergyOrbFallback className={props.className} />}>
+      <InnerEnergyOrb {...props} />
+    </ErrorBoundary>
   );
 };
